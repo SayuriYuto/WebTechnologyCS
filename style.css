@@ -1,0 +1,19 @@
+.container {
+	position: relative;
+	background-color: #caf0f8;
+	text-align: center;
+}
+.vit-logo {
+	width: 400px;
+}
+.inputform {
+	margin: 0 auto;
+}
+table {
+	margin: 0 auto;
+	width: 500px;
+	text-align: left;
+}
+.title {
+	background-color: #00b4d8;
+}
