@@ -2,6 +2,9 @@
 	position: relative;
 	background-color: #caf0f8;
 	text-align: center;
+	width: fit-content;
+	padding: 20px;
+	margin: auto;
 }
 .vit-logo {
 	width: 400px;
@@ -39,4 +42,9 @@ hr{
 	/* margin-top: 50px; */
 	border: 2px solid #5d5f61;
 	border-radius: 3px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
