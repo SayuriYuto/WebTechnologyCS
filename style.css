@@ -15,5 +15,28 @@ table {
 	text-align: left;
 }
 .title {
-	background-color: #00b4d8;
+	background-color: #00b4d861;
+	display: inline-block;
+	width: 526px;
+	padding: 5px 0px;
+}
+.navbar{
+	float: left;
+}
+.logoArea{
+	display: inline-block;
+}
+.logo{
+	float: left;
+}
+.logoText{
+	line-height: 1;
+}
+.subtext{
+	color: #5d5f61;
+}
+hr{
+	/* margin-top: 50px; */
+	border: 2px solid #5d5f61;
+	border-radius: 3px;
 }
