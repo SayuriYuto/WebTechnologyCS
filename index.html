@@ -1,338 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Registration</title>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/en/f/f0/Vishwakarma_Institute_of_Technology.png" type="image/x-icon">
-	</head>
-	<body>
-		<div class="formcontainer">
-			<div class="container">
-				<div class="logoArea">
-					<img
-						src="https://upload.wikimedia.org/wikipedia/en/f/f0/Vishwakarma_Institute_of_Technology.png"
-						alt="Vishwakarma Institute of Technology, Pune"
-						width="100px"
-						class="logo"
-					/>
-					<div class="logoText">
-						<div class="custom">
-							<h5 class="subtext">
-								Bansilal Ramnath Agarwal Charitable Trust's
-							</h5>
-							<h1>Vishwakarma Institute of Technology</h1>
-							<hr />
-							<h4 class="subtext">
-								(An Autonomous Institute affiliated to
-								Savitribai Phule Pune University)
-							</h4>
-						</div>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Registration</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="shortcut icon"
+		href="https://upload.wikimedia.org/wikipedia/en/f/f0/Vishwakarma_Institute_of_Technology.png"
+		type="image/x-icon">
+	<script src="index.js"></script>
+</head>
+
+<body>
+	<div class="formcontainer">
+		<div class="container">
+			<div class="logoArea">
+				<img src="https://upload.wikimedia.org/wikipedia/en/f/f0/Vishwakarma_Institute_of_Technology.png"
+					alt="Vishwakarma Institute of Technology, Pune" width="100px" class="logo" />
+				<div class="logoText">
+					<div class="custom">
+						<h5 class="subtext">
+							Bansilal Ramnath Agarwal Charitable Trust's
+						</h5>
+						<h1>Vishwakarma Institute of Technology</h1>
+						<hr />
+						<h4 class="subtext">
+							(An Autonomous Institute affiliated to
+							Savitribai Phule Pune University)
+						</h4>
 					</div>
 				</div>
-				<div class="inputform">
-					<h3 class="title">
-						Vishwakarma Institute of Technology Application
-					</h3>
-					<form action="">
-						<table style="table-layout: fixed">
-							<tr>
-								<td><label for="namelabel">Name:</label></td>
-							</tr>
-							<tr>
-								<td>
-									<table
-										style="
+			</div>
+			<div class="inputform">
+				<h3 class="title">
+					Vishwakarma Institute of Technology Application
+				</h3>
+				<form action="" id="form">
+					<table style="table-layout: fixed">
+						<tr>
+							<td><label for="namelabel">Name:</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table style="
 											table-layout: fixed;
 											margin: auto 0px;
-										"
-									>
-										<tr>
-											<td style="width: 10%">
-												<input
-													type="text"
-													placeholder="Prefix"
-													style="
+										">
+									<tr>
+										<td style="width: 10%">
+
+											<input type="text" placeholder="Prefix" style="
 														width: -webkit-fill-available;
-													"
-												/>
-											</td>
-											<td style="width: 45%">
-												<input
-													type="text"
-													placeholder="First name"
-													style="
+													" id="prefixlabel" onkeydown="namevalidation()" required />
+										</td>
+										<td style="width: 45%">
+											<input type="text" placeholder="First name" style="
 														width: -webkit-fill-available;
-													"
-												/>
-											</td>
-											<td style="width: 45%">
-												<input
-													type="text"
-													placeholder="Last name"
-													style="
+													" id="firstnamelabel" onkeydown="namevalidation()" required />
+										</td>
+										<td style="width: 45%">
+											<input type="text" placeholder="Last name" style="
 														width: -webkit-fill-available;
-													"
-												/>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<table
-										style="
+													" id="lastnamelabel" onkeydown="namevalidation()" required />
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table style="
 											margin: auto 0;
 											table-layout: fixed;
 											width: 100%;
-										"
-									>
-										<tr>
-											<td style="width: 50%">
-												<label for="fatherlabel"
-													>Father's name</label
-												>
-											</td>
-											<td style="width: 50%">
-												<label for="motherlabel"
-													>Mother's name</label
-												>
-											</td>
-										</tr>
-										<tr>
-											<td style="width: 50%">
-												<input
-													type="text"
-													name=""
-													id="fatherlabel"
-													style="
-														width: -webkit-fill-available;
-													"
-												/>
-											</td>
-											<td style="width: 50%">
-												<input
-													type="text"
-													name=""
-													id="motherlabel"
-													style="
-														width: -webkit-fill-available;
-													"
-												/>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<label for="genderlabel">Gender:</label>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<table>
-										<tr>
-											<td>
-												<input
-													type="radio"
-													name="gender"
-													id="Male"
-												/>
-												<label for="Male">Male</label>
-											</td>
+										">
+									<tr>
+										<td style="width: 50%">
+											<label for="fatherlabel">Father's name</label>
+										</td>
+										<td style="width: 50%">
+											<label for="motherlabel">Mother's name</label>
 
-											<td>
-												<input
-													type="radio"
-													name="gender"
-													id="Female"
-												/>
-												<label for="Female"
-													>Female</label
-												>
-											</td>
+										</td>
+									</tr>
+									<tr>
+										<td style="width: 50%">
+											<input type="text" name="" id="fatherlabel" style="
+														width: -webkit-fill-available;
+													" onkeydown="parentvalidation()" required />
 
-											<td>
-												<input
-													type="radio"
-													name="gender"
-													id="Other"
-												/>
-												<label for="Other">Other</label>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<label for="doblabel">Date of birth</label>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input
-										type="date"
-										name=""
-										id="doblabel"
-										style="width: -webkit-fill-available"
-									/>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<label for="phonelabel"
-										>Mobile number</label
-									>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input
-										type="number"
-										name=""
-										id="phonelabel"
-										placeholder="##### #####"
-										style="width: -webkit-fill-available"
-									/>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<label for="addrlabel"
-										>Permanent address</label
-									>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input
-										type="text"
-										name=""
-										id="addrlabel"
-										placeholder="Line1"
-										style="
+										</td>
+										<td style="width: 50%">
+											<input type="text" name="" id="motherlabel" style="
+														width: -webkit-fill-available;
+													" onkeydown="parentvalidation()" required />
+
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="genderlabel">Gender:</label>
+
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table>
+									<tr>
+										<td>
+											<input type="radio" name="gender" id="Male" />
+											<label for="Male">Male</label>
+										</td>
+
+										<td>
+											<input type="radio" name="gender" id="Female" />
+											<label for="Female">Female</label>
+										</td>
+
+										<td>
+											<input type="radio" name="gender" id="Other" />
+											<label for="Other">Other</label>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="doblabel">Date of birth</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h6 id="doberror"></h6>
+								<input type="date" name="" id="doblabel" style="width: -webkit-fill-available"
+									required />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="phonelabel">Mobile number</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="number" name="" id="phonelabel" placeholder="##### #####"
+									style="width: -webkit-fill-available" on onkeydown="numbervalidation()" required />
+								<h6 id="numbererror"></h6>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="addrlabel">Permanent address</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+
+								<input type="text" name="" id="addrlabel" placeholder="Line1" style="
 											width: -webkit-fill-available;
 											margin-top: 5px;
-										"
-									/>
-									<input
-										type="text"
-										name=""
-										id="addrlabel"
-										placeholder="Line2"
-										style="
+										" required />
+								<input type="text" name="" id="addrlabel" placeholder="Line2" style="
 											width: -webkit-fill-available;
 											margin-top: 5px;
-										"
-									/>
-									<input
-										type="text"
-										name=""
-										id="addrlabel"
-										placeholder="Line3"
-										style="
+										" />
+								<input type="text" name="" id="addrlabel" placeholder="Line3" style="
 											width: -webkit-fill-available;
 											margin-top: 5px;
-										"
-									/>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<table
-										style="
+										" />
+
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table style="
 											table-layout: fixed;
 											margin: auto 0px;
-										"
-									>
-										<tr>
-											<td style="width: 33%">
-												<label for="citylabel"
-													>City</label
-												>
-											</td>
-											<td style="width: 33%">
-												<label for="statelabel"
-													>State</label
-												>
-											</td>
-											<td style="width: 33%">
-												<label for="pinlabel"
-													>Pincode</label
-												>
-											</td>
-										</tr>
-										<tr>
-											<td style="width: 33%">
-												<input
-													type="text"
-													name=""
-													id="citylabel"
-													style="
+										">
+									<tr>
+										<td style="width: 33%">
+											<label for="citylabel">City</label>
+										</td>
+										<td style="width: 33%">
+											<label for="statelabel">State</label>
+										</td>
+										<td style="width: 33%">
+											<label for="pinlabel">Pincode</label>
+										</td>
+									</tr>
+									<tr>
+										<td style="width: 33%">
+											<input type="text" name="" id="citylabel" style="
 														width: -webkit-fill-available;
-													"
-												/>
-											</td>
-											<td style="width: 33%">
-												<input
-													type="text"
-													name=""
-													id="statelabel"
-													style="
+													" required />
+
+										</td>
+										<td style="width: 33%">
+											<input type="text" name="" id="statelabel" style="
 														width: -webkit-fill-available;
-													"
-												/>
-											</td>
-											<td style="width: 33%">
-												<input
-													type="number"
-													name=""
-													id="pinlabel"
-													style="
+													" required />
+
+										</td>
+										<td style="width: 33%">
+											<input type="number" name="" id="pinlabel" style="
 														width: -webkit-fill-available;
-													"
-												/>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<label for="emaillabel"
-										>Email address</label
-									>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input
-										type="email"
-										name=""
-										id="emaillabel"
-										style="width: -webkit-fill-available"
-									/>
-								</td>
-							</tr>
-							<tr>
-								<td style="text-align: center">
-									<input
-										type="submit"
-										value="Submit"
-										class="submitbutton"
-										style="margin-top: 15px"
-									/>
-								</td>
-							</tr>
-						</table>
-					</form>
-				</div>
+													" required />
+
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="emaillabel">Email address</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="email" name="" id="emaillabel" style="width: -webkit-fill-available"
+									onkeydown="emailvalidation()" required />
+								<h6 id="emailerror"></h6>
+							</td>
+						</tr>
+						<tr>
+							<td style="text-align: center">
+								<input type="submit" value="Submit" class="submitbutton" style="margin-top: 15px"
+									required />
+							</td>
+						</tr>
+					</table>
+				</form>
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>
